@@ -1,0 +1,7 @@
+{
+    "require": {
+        "monolog/monolog": "1.0.*",
+        "knplabs/github-api": "^2.5",
+        "php-http/guzzle6-adapter": "^1.1"
+    }
+}

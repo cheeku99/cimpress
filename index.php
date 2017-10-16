@@ -1,16 +1,8 @@
-
-Step 1:- Install Composer.
-Step 2:- Add "github-api" dependencies in composer.json
-	  {
-		"require": {
-			"knplabs/github-api": "^2.5",
-			"php-http/guzzle6-adapter": "^1.1"
-		}
-	  }
-	  
-	
-Step 3:- Code to be written in index.php to call the api :-
-	=======PHP Code ====
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Cimpress Technical Test :Symfony Github Repositories Detail -</h2>
+<?php
 	require_once 'vendor/autoload.php';
 	//Call the client class 
 	$client = new \Github\Client();
@@ -21,5 +13,7 @@ Step 3:- Code to be written in index.php to call the api :-
 		echo "<li><a target=\"_blank\" href=\"".$repo['url']."\">". $repo['name']."</a></li>";
 	}
 	echo "</ul>";
-	
-Note : Output screenshot - "Output.png" added under project root directory.
+?>
+
+</body>
+</html>
